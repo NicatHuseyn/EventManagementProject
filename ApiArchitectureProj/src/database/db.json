@@ -1,0 +1,20 @@
+{
+  "users": [
+    {},
+    {
+      "id": "b846afaa-5a13-4077-a9e5-d02045bbaba4",
+      "fullname": "Nicat Huseynov",
+      "username": "nijat",
+      "email": "nicathuseyn.official@gmail.com",
+      "gender": "Male"
+    },
+    {
+      "id": "9c980105-ff6d-4a77-8d4f-34b82b9c65d0",
+      "fullname": "Elnur Kərimov",
+      "username": "elnur",
+      "email": "elnur@gmail.com",
+      "gender": "Male",
+      "password": "504f008c8fcf8b2ed5dfcde752fc5464ab8ba064215d9c5b5fc486af3d9ab8c81b14785180d2ad7cee1ab792ad44798c"
+    }
+  ]
+}

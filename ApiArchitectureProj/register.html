@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/assets/css/register.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="form-modal">
+
+        <div class="form-toggle">
+          <button id="login-toggle">log in</button>
+          <button id="signup-toggle">sign up</button>
+        </div>
+      
+        <div id="login-form">
+          <form>
+            <input type="text" placeholder="Enter email or username" />
+            <input type="password" placeholder="Enter password" />
+            <button type="button" class="btn login">login</button>
+            <p><a href="javascript:void(0)">Forgotten account</a></p>
+            <hr />
+      
+          </form>
+        </div>
+      
+        <div id="signup-form">
+          <form id="signup">
+            <input type="text" id="fullname" placeholder="Enter your fullname" />
+            <input type="text" id="username" placeholder="Choose username" />
+            <input type="email" id="email" placeholder="Enter your email" />
+            <select id="gender">
+              <option value="" selected disabled>Select your gender</option>
+              <option value="Male">Male</option>
+              <option value="Female">Female</option>
+            </select>
+            <input type="password" id="password" placeholder="Create password" />
+            <input type="password" id="confirm_password" placeholder="Confirm passsword" />
+            <button type="submit" class="btn signup">create account</button>
+            <p>Clicking <strong>create account</strong> means that you are agree to our <a href="javascript:void(0)">terms of services</a>.</p>
+            <hr />
+      
+          </form>
+        </div>
+      
+      </div>
+      <script type="module" src="./src/scripts/register.js"></script>
+</body>
+</html>
