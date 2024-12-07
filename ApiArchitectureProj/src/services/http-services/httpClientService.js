@@ -1,19 +1,56 @@
-import { axiosRequest } from "../../helpers/httpClientHelper.js";
+import axios from "axios"
+import { BASE_URL } from "../../constants/url";
 
 
-// Get All Data
-export const getAllData = (endpoint)=> axiosRequest('get',endpoint);
+export const getAllData = async (endpoint)=>{
+    try {
+        const response = await axios.get(`${BASE_URL}/${endpoint}`);
+        return response;
+    } catch (error) {
+        console.log(error.message);
+        
+    }
+}
 
-export const getDataById = (endpoint, id)=> axiosRequest('get',`${endpoint}/${id}`);
+// Get Data By Id
+export const getDataById = async (endpoint, id) => {
+    try {
+        const response = await axios.get(`${BASE_URL}/${endpoint}/${id}`);
+        return response;
+    } catch (error) {
+        console.log(error);
+    }
+}
 
 // Create Data
-export const createData = (endpoint,payload)=>axiosRequest('post',endpoint,payload);
+export const createData = async (endpoint, payload) => {
+    try {
+        const response = await axios.post(`${BASE_URL}/${endpoint}`, payload, {
+            'Content-Type': 'application/json',
+        });
+        return response;
+    } catch (error) {
+        console.log(error);
+    }
+}
+
 
 // Update Data
-export const updateData = (endpoint, id,payload) => axiosRequest('put', `${endpoint}/${id}`, payload);
-
-// Update with patch
-export const updateDataByPatch = (endpoint, payload) => axiosRequest('patch', `${endpoint}/${id}`, payload);
+export const updateData = async (endpoint, payload) => {
+    try {
+        const response = await axios.put(`${BASE_URL}/${endpoint}`, payload);
+        return response
+    } catch (error) {
+        console.log(error);
+    }
+}
 
 // Delete Data
-export const deleteData = (endpoint, id) => axiosRequest('delete', `${endpoint}/${id}`);
+export async function deleteData(endpoints, id) {
+    try {
+        const response = await axios.delete(`${BASE_URL}/${endpoints}/${id}`);
+        return response;
+    } catch (error) {
+        console.log(error);
+    }
+}

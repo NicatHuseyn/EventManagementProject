@@ -1,3 +1,6 @@
+
+import { endpoints } from "../constants/url";
+import { getAllData } from "../services/http-services/httpClientService";
 import { createUser } from "../services/user-services/createUserService";
 
 document.getElementById("signup-toggle").addEventListener("click", function() {
@@ -39,6 +42,13 @@ signupForm.addEventListener("submit",(e)=>{
         return;
     }
 
+    signupForm.reset();
+
     createUser(fullnameElem,usernameELem,emailElem,genderElem,passwordElem);
 
 });
+
+getAllData(endpoints.users).then(res=>{
+    
+    console.log(res.data);
+})
