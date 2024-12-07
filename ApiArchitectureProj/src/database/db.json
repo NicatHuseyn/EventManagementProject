@@ -1,7 +1,7 @@
 {
   "users": [
     {
-      "id": "48a4"
+
     },
     {
       "id": "b846afaa-5a13-4077-a9e5-d02045bbaba4",
@@ -32,14 +32,15 @@
       "id": "1",
       "name": "Tech Conference 2024",
       "dateTime": "2024-12-15T09:00:00Z",
-      "venueId": 1,
+      "venueName": "Tech Park Conference Hall",
+      "venueAddress": "123 Silicon Avenue, Baku, Azerbaijan",
+      "venueCapacity": 500,
       "organizer": "Tech Innovators",
       "description": "An annual conference for tech enthusiasts to explore the latest trends in AI, IoT, and software development.",
       "ticketsAvailable": 200,
       "category": "Technology",
       "price": 100,
       "ageRestriction": "18+",
-      "language": "English",
       "posterURL": "https://example.com/posters/tech-conference-2024.jpg",
       "duration": "8 hours",
       "soldTickets": 300
@@ -48,14 +49,15 @@
       "id": "2",
       "name": "Live Music Night",
       "dateTime": "2024-12-20T19:30:00Z",
-      "venueId": 2,
+      "venueName": "City Music Arena",
+      "venueAddress": "456 Harmony Street, Ganja, Azerbaijan",
+      "venueCapacity": 1000,
       "organizer": "Music Fest Co.",
       "description": "A night to enjoy live performances from renowned artists and local bands.",
       "ticketsAvailable": 50,
       "category": "Music",
       "price": 50,
       "ageRestriction": "16+",
-      "language": "Multilingual",
       "posterURL": "https://example.com/posters/live-music-night.jpg",
       "duration": "4 hours",
       "soldTickets": 600
@@ -64,35 +66,41 @@
       "id": "3",
       "name": "Startup Pitch Day 2024",
       "dateTime": "2024-11-30T10:00:00Z",
-      "venueId": 3,
+      "venueName": "Startup Hub Auditorium",
+      "venueAddress": "789 Innovation Drive, Baku, Azerbaijan",
+      "venueCapacity": 300,
       "organizer": "Startup Incubator",
       "description": "Pitch your ideas to investors and gain mentorship from industry leaders.",
       "ticketsAvailable": 150,
       "category": "Business",
       "price": 30,
       "ageRestriction": "All Ages",
-      "language": "English",
       "posterURL": "https://example.com/posters/startup-pitch-day.jpg",
       "duration": "6 hours",
       "soldTickets": 100
     },
     {
-      "id": "3",
+      "id": "4",
       "name": "Art Exhibition 2024",
       "dateTime": "2024-12-01T15:00:00Z",
-      "venueId": 4,
+      "venueName": "Modern Art Gallery",
+      "venueAddress": "321 Creative Lane, Baku, Azerbaijan",
+      "venueCapacity": 200,
       "organizer": "Artistic Minds",
       "description": "Explore the finest contemporary art from local and international artists.",
       "ticketsAvailable": 80,
       "category": "Art",
       "price": 20,
       "ageRestriction": "All Ages",
-      "language": "English",
       "posterURL": "https://example.com/posters/art-exhibition-2024.jpg",
       "duration": "5 hours",
       "soldTickets": 70
     }
   ],
+  "tickets": [
+    {
+      "id": "1",
+=======
   "venues": [
     {
       "id": "1",
@@ -190,6 +198,7 @@
   "tickets": [
     {
       "id": "1",
+
       "userId": 2,
       "eventId": 1,
       "quantity": 2,
