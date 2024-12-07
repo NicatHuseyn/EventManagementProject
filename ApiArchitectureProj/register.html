@@ -16,11 +16,10 @@
         </div>
       
         <div id="login-form">
-          <form>
-            <input type="text" placeholder="Enter email or username" />
-            <input type="password" placeholder="Enter password" />
-            <button type="button" class="btn login">login</button>
-            <p><a href="javascript:void(0)">Forgotten account</a></p>
+          <form id="login">
+            <input type="text" placeholder="Enter email or username" id="username_or_email" />
+            <input type="password" placeholder="Enter password" id="login_password" />
+            <button type="submit" class="btn login">login</button>
             <hr />
       
           </form>
@@ -37,7 +36,7 @@
               <option value="Female">Female</option>
             </select>
             <input type="password" id="password" placeholder="Create password" />
-            <input type="password" id="confirm_password" placeholder="Confirm passsword" />
+            <input type="password" id="confirm_password" placeholder="Confirm password"  />
             <button type="submit" class="btn signup">create account</button>
             <p>Clicking <strong>create account</strong> means that you are agree to our <a href="javascript:void(0)">terms of services</a>.</p>
             <hr />
@@ -46,6 +45,8 @@
         </div>
       
       </div>
+
       <script type="module" src="./src/scripts/register.js"></script>
+      <script type="module" src="./src/scripts/login.js"></script>
 </body>
 </html>

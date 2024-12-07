@@ -1,7 +1,7 @@
 {
   "users": [
     {
-      "id": "6147"
+
     },
     {
       "id": "b846afaa-5a13-4077-a9e5-d02045bbaba4",
@@ -17,6 +17,14 @@
       "email": "elnur@gmail.com",
       "gender": "Male",
       "password": "504f008c8fcf8b2ed5dfcde752fc5464ab8ba064215d9c5b5fc486af3d9ab8c81b14785180d2ad7cee1ab792ad44798c"
+    },
+    {
+      "id": "6be66b6a-5d25-4c43-877a-d22ae7b483d4",
+      "fullname": "Nicat Huseynov",
+      "username": "nicat",
+      "email": "nicathuseyn.official@gmail.com",
+      "gender": "Male",
+      "password": "9a0a82f0c0cf31470d7affede3406cc9aa8410671520b727044eda15b4c25532a9b5cd8aaf9cec4919d76255b6bfb00f"
     }
   ],
   "events": [
@@ -92,6 +100,105 @@
   "tickets": [
     {
       "id": "1",
+=======
+  "venues": [
+    {
+      "id": "1",
+      "name": "Tech Park Conference Hall",
+      "address": "123 Silicon Avenue, Baku, Azerbaijan",
+      "capacity": 500,
+      "description": "A state-of-the-art conference hall equipped with modern technology for hosting large-scale events.",
+      "contactEmail": "info@techpark.az",
+      "contactPhone": "+994-50-123-4567",
+      "isParkingAvailable": true,
+      "imageURL": "https://example.com/images/tech-park-hall.jpg",
+      "reviews": [
+        {
+          "userId": 1,
+          "review": "Great venue with modern facilities!",
+          "rate": 5
+        },
+        {
+          "userId": 2,
+          "review": "Spacious hall but parking was slightly crowded.",
+          "rate": 4
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "name": "City Music Arena",
+      "address": "456 Harmony Street, Ganja, Azerbaijan",
+      "capacity": 1000,
+      "description": "A vibrant music arena hosting concerts, live performances, and festivals with excellent acoustics.",
+      "contactEmail": "contact@citymusicarena.az",
+      "contactPhone": "+994-50-234-5678",
+      "isParkingAvailable": true,
+      "imageURL": "https://example.com/images/city-music-arena.jpg",
+      "reviews": [
+        {
+          "userId": 3,
+          "review": "Amazing sound system and comfortable seating.",
+          "rate": 5
+        },
+        {
+          "userId": 4,
+          "review": "The VIP lounge was excellent, but entry queues were long.",
+          "rate": 4
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "name": "Startup Hub Auditorium",
+      "address": "789 Innovation Drive, Baku, Azerbaijan",
+      "capacity": 300,
+      "description": "A cozy auditorium perfect for workshops, seminars, and startup pitch events.",
+      "contactEmail": "auditorium@startuphub.az",
+      "contactPhone": "+994-50-345-6789",
+      "isParkingAvailable": false,
+      "imageURL": "https://example.com/images/startup-hub-auditorium.jpg",
+      "reviews": [
+        {
+          "userId": 5,
+          "review": "Perfect for small events with a collaborative atmosphere.",
+          "rate": 5
+        },
+        {
+          "userId": 6,
+          "review": "Limited parking, but the venue itself is excellent.",
+          "rate": 4
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "name": "Modern Art Gallery",
+      "address": "321 Creative Lane, Baku, Azerbaijan",
+      "capacity": 200,
+      "description": "A sophisticated gallery showcasing contemporary art and providing an inspiring venue for exhibitions.",
+      "contactEmail": "info@modernart.az",
+      "contactPhone": "+994-50-456-7890",
+      "isParkingAvailable": false,
+      "imageURL": "https://example.com/images/modern-art-gallery.jpg",
+      "reviews": [
+        {
+          "userId": 7,
+          "review": "Beautiful venue with excellent art displays.",
+          "rate": 5
+        },
+        {
+          "userId": 8,
+          "review": "Great atmosphere, but parking is inconvenient.",
+          "rate": 4
+        }
+      ]
+    }
+  ],
+  "tickets": [
+    {
+      "id": "1",
+
       "userId": 2,
       "eventId": 1,
       "quantity": 2,
