@@ -1,7 +1,10 @@
 
 
-export const BASE_URL = "https://5b25-91-242-20-168.ngrok-free.app";
+export const BASE_URL = "http://localhost:3000";
 
 export const endpoints = {
-    users:"users"
+    users:"users",
+    events:"events",
+    venues:"venues",
+    tickets:"tickets"
 }
