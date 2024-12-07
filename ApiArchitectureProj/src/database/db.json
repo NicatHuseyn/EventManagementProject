@@ -1,6 +1,8 @@
 {
   "users": [
-    {},
+    {
+      "id": "6147"
+    },
     {
       "id": "b846afaa-5a13-4077-a9e5-d02045bbaba4",
       "fullname": "Nicat Huseynov",
@@ -17,19 +19,20 @@
       "password": "504f008c8fcf8b2ed5dfcde752fc5464ab8ba064215d9c5b5fc486af3d9ab8c81b14785180d2ad7cee1ab792ad44798c"
     }
   ],
-  "events" : [
+  "events": [
     {
       "id": "1",
       "name": "Tech Conference 2024",
       "dateTime": "2024-12-15T09:00:00Z",
-      "venueId": 1,
+      "venueName": "Tech Park Conference Hall",
+      "venueAddress": "123 Silicon Avenue, Baku, Azerbaijan",
+      "venueCapacity": 500,
       "organizer": "Tech Innovators",
       "description": "An annual conference for tech enthusiasts to explore the latest trends in AI, IoT, and software development.",
       "ticketsAvailable": 200,
       "category": "Technology",
       "price": 100,
       "ageRestriction": "18+",
-      "language": "English",
       "posterURL": "https://example.com/posters/tech-conference-2024.jpg",
       "duration": "8 hours",
       "soldTickets": 300
@@ -38,14 +41,15 @@
       "id": "2",
       "name": "Live Music Night",
       "dateTime": "2024-12-20T19:30:00Z",
-      "venueId": 2,
+      "venueName": "City Music Arena",
+      "venueAddress": "456 Harmony Street, Ganja, Azerbaijan",
+      "venueCapacity": 1000,
       "organizer": "Music Fest Co.",
       "description": "A night to enjoy live performances from renowned artists and local bands.",
       "ticketsAvailable": 50,
       "category": "Music",
       "price": 50,
       "ageRestriction": "16+",
-      "language": "Multilingual",
       "posterURL": "https://example.com/posters/live-music-night.jpg",
       "duration": "4 hours",
       "soldTickets": 600
@@ -54,132 +58,40 @@
       "id": "3",
       "name": "Startup Pitch Day 2024",
       "dateTime": "2024-11-30T10:00:00Z",
-      "venueId": 3,
+      "venueName": "Startup Hub Auditorium",
+      "venueAddress": "789 Innovation Drive, Baku, Azerbaijan",
+      "venueCapacity": 300,
       "organizer": "Startup Incubator",
       "description": "Pitch your ideas to investors and gain mentorship from industry leaders.",
       "ticketsAvailable": 150,
       "category": "Business",
       "price": 30,
       "ageRestriction": "All Ages",
-      "language": "English",
       "posterURL": "https://example.com/posters/startup-pitch-day.jpg",
       "duration": "6 hours",
       "soldTickets": 100
     },
     {
-      "id": "3",
+      "id": "4",
       "name": "Art Exhibition 2024",
       "dateTime": "2024-12-01T15:00:00Z",
-      "venueId": 4,
+      "venueName": "Modern Art Gallery",
+      "venueAddress": "321 Creative Lane, Baku, Azerbaijan",
+      "venueCapacity": 200,
       "organizer": "Artistic Minds",
       "description": "Explore the finest contemporary art from local and international artists.",
       "ticketsAvailable": 80,
       "category": "Art",
       "price": 20,
       "ageRestriction": "All Ages",
-      "language": "English",
       "posterURL": "https://example.com/posters/art-exhibition-2024.jpg",
       "duration": "5 hours",
       "soldTickets": 70
     }
   ],
-  "venues" : [
+  "tickets": [
     {
-      "id": 1,
-      "name": "Tech Park Conference Hall",
-      "address": "123 Silicon Avenue, Baku, Azerbaijan",
-      "capacity": 500,
-      "description": "A state-of-the-art conference hall equipped with modern technology for hosting large-scale events.",
-      "contactEmail": "info@techpark.az",
-      "contactPhone": "+994-50-123-4567",
-      "isParkingAvailable": true,
-      "imageURL": "https://example.com/images/tech-park-hall.jpg",
-      "reviews": [
-        {
-          "userId": 1,
-          "review": "Great venue with modern facilities!",
-          "rate": 5
-        },
-        {
-          "userId": 2,
-          "review": "Spacious hall but parking was slightly crowded.",
-          "rate": 4
-        }
-      ]
-    },
-    {
-      "id": 2,
-      "name": "City Music Arena",
-      "address": "456 Harmony Street, Ganja, Azerbaijan",
-      "capacity": 1000,
-      "description": "A vibrant music arena hosting concerts, live performances, and festivals with excellent acoustics.",
-      "contactEmail": "contact@citymusicarena.az",
-      "contactPhone": "+994-50-234-5678",
-      "isParkingAvailable": true,
-      "imageURL": "https://example.com/images/city-music-arena.jpg",
-      "reviews": [
-        {
-          "userId": 3,
-          "review": "Amazing sound system and comfortable seating.",
-          "rate": 5
-        },
-        {
-          "userId": 4,
-          "review": "The VIP lounge was excellent, but entry queues were long.",
-          "rate": 4
-        }
-      ]
-    },
-    {
-      "id": 3,
-      "name": "Startup Hub Auditorium",
-      "address": "789 Innovation Drive, Baku, Azerbaijan",
-      "capacity": 300,
-      "description": "A cozy auditorium perfect for workshops, seminars, and startup pitch events.",
-      "contactEmail": "auditorium@startuphub.az",
-      "contactPhone": "+994-50-345-6789",
-      "isParkingAvailable": false,
-      "imageURL": "https://example.com/images/startup-hub-auditorium.jpg",
-      "reviews": [
-        {
-          "userId": 5,
-          "review": "Perfect for small events with a collaborative atmosphere.",
-          "rate": 5
-        },
-        {
-          "userId": 6,
-          "review": "Limited parking, but the venue itself is excellent.",
-          "rate": 4
-        }
-      ]
-    },
-    {
-      "id": 4,
-      "name": "Modern Art Gallery",
-      "address": "321 Creative Lane, Baku, Azerbaijan",
-      "capacity": 200,
-      "description": "A sophisticated gallery showcasing contemporary art and providing an inspiring venue for exhibitions.",
-      "contactEmail": "info@modernart.az",
-      "contactPhone": "+994-50-456-7890",
-      "isParkingAvailable": false,
-      "imageURL": "https://example.com/images/modern-art-gallery.jpg",
-      "reviews": [
-        {
-          "userId": 7,
-          "review": "Beautiful venue with excellent art displays.",
-          "rate": 5
-        },
-        {
-          "userId": 8,
-          "review": "Great atmosphere, but parking is inconvenient.",
-          "rate": 4
-        }
-      ]
-    }
-  ],
-  "tickets" : [
-    {
-      "id": 1,
+      "id": "1",
       "userId": 2,
       "eventId": 1,
       "quantity": 2,
@@ -189,7 +101,7 @@
       "ticketCode": "TK-001-AB12X"
     },
     {
-      "id": 2,
+      "id": "2",
       "userId": 3,
       "eventId": 2,
       "quantity": 1,
@@ -199,7 +111,7 @@
       "ticketCode": "TK-002-CD34Y"
     },
     {
-      "id": 3,
+      "id": "3",
       "userId": 4,
       "eventId": 3,
       "quantity": 3,
@@ -209,7 +121,7 @@
       "ticketCode": "TK-003-EF56Z"
     },
     {
-      "id": 4,
+      "id": "4",
       "userId": 5,
       "eventId": 4,
       "quantity": 1,
@@ -219,7 +131,7 @@
       "ticketCode": "TK-004-GH78A"
     },
     {
-      "id": 5,
+      "id": "5",
       "userId": 2,
       "eventId": 5,
       "quantity": 2,
