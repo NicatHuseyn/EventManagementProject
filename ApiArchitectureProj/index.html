@@ -1,13 +1,199 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  
-  
 
-</body>
-</html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="./src/assets/css/style.css">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>EventMaster - Your Event Management Solution</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="./src/assets/css/homepage.css">
+
+    </head>
+
+    <body>
+        <header >
+            <nav>
+                <div class="logo">Elythra.</div>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#events">Events</a></li>
+                    <li><a href="#venues">Venues</a></li>
+                    <li><a href="#signin">Sign In</a></li>
+                    <li><a href="/createuser" class="signup-btn">Sign Up</a></li>
+                </ul>
+                <div class="burger">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <section id="hero">
+                <div id="eventCarousel" class="carusel-shadow carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="https://www.eventsindustryforum.co.uk/images/articles/about_the_eif.jpg"
+                                class="d-block w-100" alt="Event 1">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Amazing Concerts</h5>
+                                <p>Experience the best live music events.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./src/assets/images/Messe_Luzern_Corporate_Event.jpg" class="d-block w-100"
+                                alt="Event 2">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Business Conferences</h5>
+                                <p>Network with industry leaders at our top-notch conferences.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://www.webex.com/content/dam/www/us/en/images/products/suite/event/webex-events-hero.jpg"
+                                class="d-block w-100" alt="Event 3">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Outdoor Festivals</h5>
+                                <p>Enjoy nature and music at our outdoor festivals.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#eventCarousel"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#eventCarousel"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </section>
+           <section class="about_us">
+            <div class="image">
+                <img src="https://jshay.events/wp-content/uploads/2020/06/Corporate-Events.jpg  " alt="photo">
+            </div>
+            <div class="content">
+                <h2>
+                    About Us
+                </h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed molestias vitae harum itaque laudantium magnam praesentium voluptate unde adipisci. Ratione maxime tempora aliquid voluptatibus laudantium explicabo cumque ea aspernatur voluptatem. Veniam beatae maxime at expedita hic sit est possimus totam?
+            </div>
+           </section>
+
+
+            <section id="statistics">
+                <div class="container">
+                    <div class="stats-grid">
+                        <div class="stat-item">
+                            <i class="stat-icon calendar-icon"></i>
+                            <div class="stat-number">8,963</div>
+                            <div class="stat-label">Events</div>
+                        </div>
+                        <div class="stat-item">
+                            <i class="stat-icon online-icon"></i>
+                            <div class="stat-number">552</div>
+                            <div class="stat-label">Online Events</div>
+                        </div>
+                        <div class="stat-item">
+                            <i class="stat-icon person-icon"></i>
+                            <div class="stat-number">8,411</div>
+                            <div class="stat-label">In person events</div>
+                        </div>
+                        <div class="stat-item">
+                            <i class="stat-icon users-icon"></i>
+                            <div class="stat-number">31,413</div>
+                            <div class="stat-label">Users</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="features">
+                <h2>A better way to manage events</h2>
+                <div class="feature-grid">
+                    <div class="feature">
+                        <h3>Easy Event Creation</h3>
+                        <p>Create and manage events with just a few clicks.</p>
+                    </div>
+                    <div class="feature">
+                        <h3>Venue Management</h3>
+                        <p>Find and book the perfect venue for your events.</p>
+                    </div>
+                    <div class="feature">
+                        <h3>Attendee Tracking</h3>
+                        <p>Keep track of your attendees and their preferences.</p>
+                    </div>
+                    <div class="feature">
+                        <h3>Analytics</h3>
+                        <p>Get insights into your events performance.</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="container footer-content">
+                <div class="footer-column">
+                    <h3>About the company</h3>
+                    <p>Map Your Show is your trade show operating system. Our technology is trusted by the world's
+                        leading trade show and event organizers so they can focus on what matters most: delivering a
+                        successful event.</p>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon">X</a>
+                        <a href="#" class="social-icon">in</a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Solutions</h3>
+                    <ul>
+                        <li><a href="#">Floor Builder</a></li>
+                        <li><a href="#">Attendee Planner</a></li>
+                        <li><a href="#">Mobile App</a></li>
+                        <li><a href="#">Booth Sales</a></li>
+                        <li><a href="#">Conference Management</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="#">Enhanced Listings</a></li>
+                        <li><a href="#">On-site Booth Renewal</a></li>
+                        <li><a href="#">Onboarding & Training</a></li>
+                        <li><a href="#">Integrations</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Resources</h3>
+                    <ul>
+                        <li><a href="#">Articles</a></li>
+                        <li><a href="#">Videos</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Leadership Team</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+         <script src="./src/scripts/home.js"></script>
+ 
+    </body>
+
+    </html>

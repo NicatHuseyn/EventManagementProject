@@ -1,19 +1,62 @@
-import { axiosRequest } from "../../helpers/httpClientHelper.js";
+import axios from "axios"
+
+import { BASE_URL } from "../../constants/url.js";
 
 
-// Get All Data
-export const getAllData = (endpoint)=> axiosRequest('get',endpoint);
-
-export const getDataById = (endpoint, id)=> axiosRequest('get',`${endpoint}/${id}`);
-
-// Create Data
-export const createData = (endpoint,payload)=>axiosRequest('post',endpoint,payload);
-
-// Update Data
-export const updateData = (endpoint, id,payload) => axiosRequest('put', `${endpoint}/${id}`, payload);
-
-// Update with patch
-export const updateDataByPatch = (endpoint, payload) => axiosRequest('patch', `${endpoint}/${id}`, payload);
-
-// Delete Data
-export const deleteData = (endpoint, id) => axiosRequest('delete', `${endpoint}/${id}`);
+//get all data
+async function getAllData(endpoint) {
+    try {
+      const response = await axios(`${BASE_URL}/${endpoint}`);
+      return response;
+    } catch (error) {
+      console.log(error.message);
+    }
+  }
+  
+  // get data by id
+  async function getDataById(endpoint, id) {
+    try {
+      const response = await axios(`${BASE_URL}/${endpoint}/${id}`);
+      return response;
+    } catch (error) {
+      console.log(error.message);
+    }
+  }
+  // delete data by id
+  async function deleteDataById(endpoint, id) {
+    try {
+      const response = await axios.delete(`${BASE_URL}/${endpoint}/${id}`);
+      return response;
+    } catch (error) {
+      console.log(error.message);
+    }
+  }
+  // add new data
+  async function addNewData(endpoint, payload) {
+    try {
+      const response = await axios.post(`${BASE_URL}/${endpoint}`, payload);
+      return response;
+    } catch (error) {
+      console.log(error.message);
+    }
+  }
+  // edit data by id
+  async function editDataById(endpoint, id, payload) {
+    try {
+      const response = await axios.put(`${BASE_URL}/${endpoint}/${id}`, payload);
+      return response;
+    } catch (error) {
+      console.log(error.message);
+    }
+  }
+  // edit data by id patch
+  async function editDataByIdPatch(endpoint, id, payload) {
+    try {
+      const response = await axios.patch(`${BASE_URL}/${endpoint}/${id}`, payload);
+      return response;
+    } catch (error) {
+      console.log(error.message);
+    }
+  }
+  
+  export { getAllData, getDataById, deleteDataById, addNewData, editDataById,editDataByIdPatch };

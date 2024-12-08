@@ -1,0 +1,197 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #132644;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Arial', sans-serif;
+}
+.event-card{
+    background: rgb(40, 53, 85); /* fallback solid color */
+    background: linear-gradient(90deg, rgba(40, 53, 85, 1) 0%, rgba(52, 60, 97, 1) 20%, rgba(65, 81, 106, 1) 41%, rgba(83, 78, 122, 1) 66%, rgba(99, 90, 137, 1) 90%, rgba(118, 101, 154, 1) 106%);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    width: 80%;
+    max-width: 1200px;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-between;
+    padding: 20px;
+    border-radius: 15px;
+    gap: 20px;
+}
+
+.card-header{
+    width: 49%;
+}
+.card-poster{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.card-img{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card-img:hover{
+    transform: scale(1.05);
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 8px 24px;
+}
+.card-balance{
+    margin-top: 20px;
+    border-radius: 5px;
+    padding: 10px;
+    color: #CC9BE1;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+.card-item{
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+
+.card-details{
+    width: 51%;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+}
+.details-info{
+    margin-bottom: 20px;
+}
+
+.details-title,
+.details-date,
+.details-time,
+.details-location,
+.details-price,
+.details-organizer{
+    color: #CC9BE1;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.details-title span,
+.details-date span,
+.details-time i,
+.details-location span,
+.details-price span,
+.details-organizer span{
+    color: antiquewhite;
+}
+
+.details__ticket-selection{
+    margin-top: 20px;
+}
+.details-label{
+    display: block;
+    color: #CC9BE1;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+.details-input{
+    width: 60px;
+    padding: 8px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #CC9BE1;
+    margin-right: 10px; 
+}
+.details-input:focus{
+    outline: none;
+    border-color: #99C9E7;
+}
+.details-tickets{
+    color: #CC9BE1;
+    margin-top: 10px;
+    font-size: 16px;
+}
+.details-tickets span{
+    color: antiquewhite;
+}
+.details-buy-ticket{
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #CC9BE1;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s ease;
+}
+.details-buy-ticket:hover{
+    background-color: #99C9E7;
+}
+.card-sold-out-message{
+    margin-top: 20px;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: left;
+    color: red;
+    /* display: block; */
+}
+.details-go-back{
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #CC9BE1;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s ease;
+    text-decoration: none;
+}
+.details-go-back:hover{
+    background-color: #99C9E7;
+}
+@media screen and (max-width: 768px) {
+    .event-card {
+       flex-direction: column;
+       width: 100%;
+    }
+    .card-header{
+        width: 100%;
+    }
+    .card-details{
+        width: 100%;
+
+    }
+    .card-poster{
+        width: 100%;
+        height: 100%;
+    }
+}    
+@media screen and (max-width: 480px) {
+    .event-card {
+        flex-direction: column;
+        width: 100%;
+    }
+    .card-header{
+        width: 100%;
+    }
+    .card-details{
+        width: 100%;        
+    }
+    .card-poster{
+        width: 100%;
+    }
+    .card-img{
+        width: 100%;
+        height: 100%;
+
+    }
+}

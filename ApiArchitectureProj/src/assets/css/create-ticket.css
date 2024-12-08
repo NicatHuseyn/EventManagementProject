@@ -1,0 +1,66 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
+
+#signup-form{
+    width: 100%;
+    padding: 50px 0;
+}
+
+.form-inner{
+    width: 600px;
+    margin: 0 auto;
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.form-inner #signup{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+#signup .input{
+    padding: 20px;
+    display: block;
+    margin: 10px 0;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.input option{
+    background-color: blue;
+    color: #fff;
+}
+
+#signup .btn{
+    padding: 10px;
+    border-radius: 20px;
+    outline: none;
+    background-color: #57b846;
+    border: none;
+    color: #fff;
+    font-size: 20px;
+    font-family: sans-serif;
+    display: block;
+    margin: 10px;
+    cursor: pointer;
+}
+
+h1{
+    text-align: center;
+    margin: 20px 0;
+}
+
