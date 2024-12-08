@@ -1,12 +1,19 @@
+import { globalHashPassword } from "../../constants/globalPasswordHash.js";
+// import { createTicket } from "../../services/ticket-se`rvices/createTicketService..js";
+// import { Ticket } from "../ticket-classes/ticket.js";`
+
 let uuid = crypto.randomUUID();
 
 export class User {
-    constructor(fullname, username, email, gender) {
-        this.id = uuid;
-        this.fullname = fullname;
-        this.username = username;
-        this.email = email;
-        this.gender = gender;
+    constructor(fullname, username, email,balance, gender,profilePictureURL) {
+        this.id = uuid
+        this.fullname = fullname
+        this.username = username
+        this.email = email
+        this.balance = balance
+        this.profilePictureURL = profilePictureURL
+        this.gender = gender
+        this.accountCreateDate = new Date().toISOString()
     }
 
     async initializePassword(password) {
@@ -16,12 +23,10 @@ export class User {
     async hashPassword(password) {
         return await globalHashPassword(password);
     }
-}
 
-const globalHashPassword = async (password) => {
-    const encoder = new TextEncoder();
-    const data = encoder.encode(password);
-    const hashBuffer = await crypto.subtle.digest("SHA-384", data);
-    const hashArray = Array.from(new Uint8Array(hashBuffer));
-    return hashArray.map((b) => b.toString(16).padStart(2, "0")).join("");
-};
+    // bornTicket(ticket = null){
+    //     const userTickets = [];
+    //     userTickets.push(ticket);
+    //     return userTickets;
+    // }
+}

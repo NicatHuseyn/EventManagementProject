@@ -2,19 +2,143 @@
   "users": [
     {},
     {
-      "id": "b846afaa-5a13-4077-a9e5-d02045bbaba4",
+      "id": "42fc9ea8-92e9-4a31-966d-9c543d8a0fe7",
       "fullname": "Nicat Huseynov",
       "username": "nijat",
       "email": "nicathuseyn.official@gmail.com",
-      "gender": "Male"
+      "balance": "111",
+      "profilePictureURL": "https://avatars.githubusercontent.com/u/95528463?v=4",
+      "gender": "Male",
+      "accountCreateDate": "2024-12-08T09:30:21.411Z",
+      "password": "493f027e69acef5ec48851f2e9cee4b2ca342a391a364d8040a326a62a3875ac4a717ba236995d84ddc3dfb58daaabc3"
     },
     {
-      "id": "9c980105-ff6d-4a77-8d4f-34b82b9c65d0",
-      "fullname": "Elnur Kərimov",
-      "username": "elnur",
-      "email": "elnur@gmail.com",
+      "id": "cea1b629-2720-49e8-8f98-670936994e21",
+      "fullname": "Elcan Aydemirov",
+      "username": "elcanaydemir",
+      "email": "elcan@gmail.com",
+      "balance": "500",
+      "profilePictureURL": "deerfrfr",
       "gender": "Male",
-      "password": "504f008c8fcf8b2ed5dfcde752fc5464ab8ba064215d9c5b5fc486af3d9ab8c81b14785180d2ad7cee1ab792ad44798c"
+      "accountCreateDate": "2024-12-08T09:31:18.124Z",
+      "password": "493f027e69acef5ec48851f2e9cee4b2ca342a391a364d8040a326a62a3875ac4a717ba236995d84ddc3dfb58daaabc3"
+    }
+  ],
+  "events": [
+    {
+      "id": "1",
+      "name": "Tech Conference 2024",
+      "dateTime": "2024-12-15T09:00:00Z",
+      "venueName": "Tech Park Conference Hall",
+      "venueAddress": "123 Silicon Avenue, Baku, Azerbaijan",
+      "venueCapacity": 500,
+      "organizer": "Tech Innovators",
+      "description": "An annual conference for tech enthusiasts to explore the latest trends in AI, IoT, and software development.",
+      "ticketsAvailable": 200,
+      "category": "Technology",
+      "price": 100,
+      "ageRestriction": "18+",
+      "posterURL": "https://example.com/posters/tech-conference-2024.jpg",
+      "duration": "8 hours",
+      "soldTickets": 300
+    },
+    {
+      "id": "2",
+      "name": "Live Music Night",
+      "dateTime": "2024-12-20T19:30:00Z",
+      "venueName": "City Music Arena",
+      "venueAddress": "456 Harmony Street, Ganja, Azerbaijan",
+      "venueCapacity": 1000,
+      "organizer": "Music Fest Co.",
+      "description": "A night to enjoy live performances from renowned artists and local bands.",
+      "ticketsAvailable": 50,
+      "category": "Music",
+      "price": 50,
+      "ageRestriction": "16+",
+      "posterURL": "https://example.com/posters/live-music-night.jpg",
+      "duration": "4 hours",
+      "soldTickets": 600
+    },
+    {
+      "id": "3",
+      "name": "Startup Pitch Day 2024",
+      "dateTime": "2024-11-30T10:00:00Z",
+      "venueName": "Startup Hub Auditorium",
+      "venueAddress": "789 Innovation Drive, Baku, Azerbaijan",
+      "venueCapacity": 300,
+      "organizer": "Startup Incubator",
+      "description": "Pitch your ideas to investors and gain mentorship from industry leaders.",
+      "ticketsAvailable": 150,
+      "category": "Business",
+      "price": 30,
+      "ageRestriction": "All Ages",
+      "posterURL": "https://example.com/posters/startup-pitch-day.jpg",
+      "duration": "6 hours",
+      "soldTickets": 100
+    },
+    {
+      "id": "4",
+      "name": "Art Exhibition 2024",
+      "dateTime": "2024-12-01T15:00:00Z",
+      "venueName": "Modern Art Gallery",
+      "venueAddress": "321 Creative Lane, Baku, Azerbaijan",
+      "venueCapacity": 200,
+      "organizer": "Artistic Minds",
+      "description": "Explore the finest contemporary art from local and international artists.",
+      "ticketsAvailable": 80,
+      "category": "Art",
+      "price": 20,
+      "ageRestriction": "All Ages",
+      "posterURL": "https://example.com/posters/art-exhibition-2024.jpg",
+      "duration": "5 hours",
+      "soldTickets": 70
+    }
+  ],
+  "tickets": [
+    {
+      "id": 1,
+      "userId": 2,
+      "eventId": 1,
+      "quantity": 2,
+      "price": 100,
+      "purchaseDate": "2024-11-10T15:30:00Z",
+      "ticketCode": "TK-001-AB12X"
+    },
+    {
+      "id": 2,
+      "userId": 3,
+      "eventId": 2,
+      "quantity": 1,
+      "price": 80,
+      "purchaseDate": "2024-11-12T10:00:00Z",
+      "ticketCode": "TK-002-CD34Y"
+    },
+    {
+      "id": 3,
+      "userId": 4,
+      "eventId": 3,
+      "quantity": 3,
+      "price": 120,
+      "purchaseDate": "2024-11-14T12:00:00Z",
+      "ticketCode": "TK-003-EF56Z"
+    },
+    {
+      "id": 4,
+      "userId": 5,
+      "eventId": 4,
+      "quantity": 1,
+      "price": 90,
+      "purchaseDate": "2024-11-15T18:30:00Z",
+      "ticketCode": "TK-004-GH78A"
+    },
+    {
+      "id": 5,
+      "userId": 2,
+      "eventId": 5,
+      "quantity": 2,
+      "price": 130,
+      "purchaseDate": "2024-11-16T09:00:00Z",
+      "ticketCode": "TK-005-IJ90B"
     }
   ]
 }

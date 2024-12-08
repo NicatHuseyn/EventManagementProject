@@ -61,6 +61,8 @@ body {
   position: relative;
   width: 100%;
   height: auto;
+  display: flex;
+  justify-content: center;
 }
 
 .form-toggle button {
@@ -72,8 +74,9 @@ body {
   transition: 0.2s;
   font-size: 1.1em;
   font-weight: bold;
-  border-top-right-radius: 20px;
-  border-top-left-radius: 20px;
+  /* border-top-right-radius: 20px;
+  border-top-left-radius: 20px; */
+  border-radius: 20px;
 }
 
 .form-toggle button:nth-child(1) {

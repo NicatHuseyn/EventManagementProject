@@ -1,15 +1,33 @@
+
 import { endpoints } from "../../constants/url.js";
 import { axiosRequest } from "../../helpers/httpClientHelper.js"
+
+import { globalHashPassword } from "../../constants/globalPasswordHash.js";
+import { endpoints } from "../../constants/url.js";
+
 import { getAllData } from "../http-services/httpClientService.js";
 
 
 export const loginUser = (userNameOrEmail,password)=>{
 
     try {
+
         
         const users = getAllData(endpoints.users).then(res=>res.data);
 
         const user = users.find(u=>(u.username === userNameOrEmail || u.email === userNameOrEmail) && u.password === password);
+
+
+        // const users = getAllData(endpoints.users).then(res=>res.data);
+
+        // const user = users.find(u=>(u.username === userNameOrEmail || u.email === userNameOrEmail) && u.password === password);
+
+        const user = {};
+
+        getAllData(endpoints.users).then((res)=>{
+            user = res.data.find(u=>(u.username === userNameOrEmail || u.email === userNameOrEmail) && u.password === password);
+        })
+
 
         if (user) {
             // Create token
@@ -17,11 +35,23 @@ export const loginUser = (userNameOrEmail,password)=>{
             // Set local storage
             localStorage.setItem("token",token);
 
+
             window.location.href = "/adminpanel"; // Admin panele yonlenme
 
         }
 
     } catch (error) {
+
+            window.location.href = "/admin";
+        }
+        else{
+            console.log("Invalid username or password.");
+            
+        }
+
+    } catch (error) {
+        console.log(error);
+
         
     }
 
