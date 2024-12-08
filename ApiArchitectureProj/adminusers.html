@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+th,
+td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #333;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #ddd;
+}
+
+.formContainer {
+    display: none;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 30px;
+    border-radius: 8px; /* Rounded corners */
+    background-color: #fff; /* White background */
+}
+</style>
+</head>
+<body>
+    <section id="Table">
+        <div class="table">
+            <h2>Sample Table with HTML and CSS</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>username</th>
+                        <th>email</th>
+                        <th>balance</th>
+                        <th>favorites</th>
+                        <th>accountCreationDate</th>
+                        <th>totalSpentMoney</th>
+                    </tr>
+                </thead>
+                <tbody >
+                    <!-- Dynamic content will go here -->
+                </tbody>
+            </table>
+        </div>
+    </section>
+    <script src="./src/assets/js/adminusers.js" type="module"></script>
+</body>
+</html>

@@ -103,10 +103,33 @@ async function getData() {
         btn.addEventListener("click", async () => {
             const id = btn.getAttribute("data-id");
             try {
-                const res = await deleteDataById(endpoints.events, id);
-                if (res.status === 200) {
-                    btn.closest("tr").remove();
-                }
+
+                
+                    Swal.fire({
+                        title: "Are you sure?",
+                        text: "You won't be able to revert this!",
+                        icon: "warning",
+                        showCancelButton: true,
+                        confirmButtonColor: "#3085d6",
+                        cancelButtonColor: "#d33",
+                        confirmButtonText: "Yes, delete it!"
+                      }).then(async (result) => {
+
+
+                        
+                        if (result.isConfirmed) {
+                        const res = await deleteDataById(endpoints.events, id);
+                        console.log(btn.closest("tr"));
+                        
+                        btn.closest("tr").remove
+                          Swal.fire({
+                            title: "Deleted!",
+                            text: "Your file has been deleted.",
+                            icon: "success"
+                          });
+                        }
+                      });
+                
             } catch (error) {
                 console.error("Error deleting event:", error);
             }

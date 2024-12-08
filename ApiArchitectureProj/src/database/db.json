@@ -1,238 +1,149 @@
 {
   "users": [
     {
-
+      "id": "1",
+      "role": "admin",
+      "username": "admin_tech",
+      "email": "admin_tech@example.com",
+      "password": "hashed_password_1",
+      "balance": 500,
+      "profilePictureURL": "https://example.com/images/admin-profile.jpg",
+      "favorites": [
+        {
+          "id": 1,
+          "eventId": 1
+        },
+        {
+          "id": 2,
+          "eventId": 2
+        }
+      ],
+      "accountCreationDate": "2022-01-01",
+      "totalSpentMoney": 0
     },
     {
-      "id": "b846afaa-5a13-4077-a9e5-d02045bbaba4",
-      "fullname": "Nicat Huseynov",
-      "username": "nijat",
-      "email": "nicathuseyn.official@gmail.com",
-      "gender": "Male"
+      "id": "2",
+      "role": "client",
+      "username": "johnny_events",
+      "email": "johnny@example.com",
+      "password": "hashed_password_2",
+      "balance": 150,
+      "profilePictureURL": "https://example.com/images/johnny-profile.jpg",
+      "favorites": [
+        {
+          "id": 1,
+          "eventId": 3
+        },
+        {
+          "id": 2,
+          "eventId": 4
+        }
+      ],
+      "accountCreationDate": "2023-05-15",
+      "totalSpentMoney": 80
     },
     {
-      "id": "9c980105-ff6d-4a77-8d4f-34b82b9c65d0",
-      "fullname": "Elnur Kərimov",
-      "username": "elnur",
-      "email": "elnur@gmail.com",
-      "gender": "Male",
-      "password": "504f008c8fcf8b2ed5dfcde752fc5464ab8ba064215d9c5b5fc486af3d9ab8c81b14785180d2ad7cee1ab792ad44798c"
+      "id": "3",
+      "role": "client",
+      "username": "mike_attendee",
+      "email": "mike@example.com",
+      "password": "hashed_password_3",
+      "balance": 75,
+      "profilePictureURL": "https://example.com/images/mike-profile.jpg",
+      "favorites": [
+        {
+          "id": 1,
+          "eventId": 1
+        },
+        {
+          "id": 2,
+          "eventId": 2
+        }
+      ],
+      "accountCreationDate": "2023-07-12",
+      "totalSpentMoney": 50
     },
     {
-      "id": "6be66b6a-5d25-4c43-877a-d22ae7b483d4",
-      "fullname": "Nicat Huseynov",
-      "username": "nicat",
-      "email": "nicathuseyn.official@gmail.com",
-      "gender": "Male",
-      "password": "9a0a82f0c0cf31470d7affede3406cc9aa8410671520b727044eda15b4c25532a9b5cd8aaf9cec4919d76255b6bfb00f"
+      "id": "4",
+      "role": "client",
+      "username": "jenny_tech",
+      "email": "jenny@example.com",
+      "password": "hashed_password_4",
+      "balance": 120,
+      "profilePictureURL": "https://example.com/images/jenny-profile.jpg",
+      "favorites": [
+        {
+          "id": 1,
+          "eventId": 3
+        },
+        {
+          "id": 2,
+          "eventId": 5
+        }
+      ],
+      "accountCreationDate": "2022-03-01",
+      "totalSpentMoney": 110
+    },
+    {
+      "id": "5",
+      "role": "client",
+      "username": "susan_smith",
+      "email": "susan@example.com",
+      "password": "hashed_password_5",
+      "balance": 200,
+      "profilePictureURL": "https://example.com/images/susan-profile.jpg",
+      "favorites": [
+        {
+          "id": 1,
+          "eventId": 4
+        },
+        {
+          "id": 2,
+          "eventId": 5
+        }
+      ],
+      "accountCreationDate": "2021-09-20",
+      "totalSpentMoney": 250
     }
   ],
   "events": [
     {
-      "id": "1",
-      "name": "Salam123",
-      "dateTime": "2024-12-15T09:00:00Z",
-      "venueName": "Tech Park Conference Hall",
-      "venueAddress": "123 Silicon Avenue, Baku, Azerbaijan",
-      "venueCapacity": 500,
-      "organizer": "Tech Innovators",
-      "description": "An annual conference for tech enthusiasts to explore the latest trends in AI, IoT, and software development.",
-      "ticketsAvailable": "200",
-      "category": "Technology",
-      "price": "100",
-      "ageRestriction": "18+",
-      "posterURL": "https://example.com/posters/tech-conference-2024.jpg",
-      "duration": "8 hours",
-      "soldTickets": "300"
-    },
-    {
-      "id": "3",
-      "name": "Startup Pitch Day 2024",
-      "dateTime": "2024-11-30T10:00:00Z",
-      "venueName": "Startup Hub Auditorium",
-      "venueAddress": "789 Innovation Drive, Baku, Azerbaijan",
-      "venueCapacity": 300,
-      "organizer": "Startup Incubator",
-      "description": "Pitch your ideas to investors and gain mentorship from industry leaders.",
-      "ticketsAvailable": 150,
-      "category": "Business",
-      "price": 30,
-      "ageRestriction": "All Ages",
-      "posterURL": "https://example.com/posters/startup-pitch-day.jpg",
-      "duration": "6 hours",
-      "soldTickets": 100
-    },
-    {
-      "id": "4",
+      "id": "e032",
       "name": "Art Exhibition 2024",
-      "dateTime": "2024-12-01T15:00:00Z",
-      "venueName": "Modern Art Gallery",
-      "venueAddress": "321 Creative Lane, Baku, Azerbaijan",
-      "venueCapacity": 200,
+      "dateTime": "2024-12-08T08:11:07.921Z",
       "organizer": "Artistic Minds",
       "description": "Explore the finest contemporary art from local and international artists.",
-      "ticketsAvailable": 80,
+      "ticketsAvailable": "80",
       "category": "Art",
-      "price": 20,
+      "price": "20",
       "ageRestriction": "All Ages",
-      "posterURL": "https://example.com/posters/art-exhibition-2024.jpg",
+      "posterURL": "https://salam",
       "duration": "5 hours",
-      "soldTickets": 70
+      "soldTickets": "132"
     },
     {
-      "id": "7aa4",
-      "name": "Salam123",
-      "dateTime": "2024-12-08T00:34:30.386Z",
-      "organizer": "Tech Innovators",
-      "description": "fasafs",
-      "ticketsAvailable": "200",
-      "category": "Technology",
-      "price": "100",
-      "ageRestriction": "18+",
-      "posterURL": "https://example.com/posters/tech-conference-2024.jpg",
-      "duration": "8 hours",
-      "soldTickets": "213"
+      "id": "fc4d",
+      "name": "Art Exhibition 2024",
+      "dateTime": "2024-12-08T08:11:51.452Z",
+      "organizer": "Artistic Minds",
+      "description": "dgdfgfd",
+      "ticketsAvailable": "80",
+      "category": "Art",
+      "price": "20",
+      "ageRestriction": "All Ages",
+      "posterURL": "https://salam",
+      "duration": "5 hours",
+      "soldTickets": "354345"
     }
   ],
   "tickets": [
     {
-      "id": "1",
-=======
-  "venues": [
-    {
-      "id": "1",
-      "name": "Tech Park Conference Hall",
-      "address": "123 Silicon Avenue, Baku, Azerbaijan",
-      "capacity": 500,
-      "description": "A state-of-the-art conference hall equipped with modern technology for hosting large-scale events.",
-      "contactEmail": "info@techpark.az",
-      "contactPhone": "+994-50-123-4567",
-      "isParkingAvailable": true,
-      "imageURL": "https://example.com/images/tech-park-hall.jpg",
-      "reviews": [
-        {
-          "userId": 1,
-          "review": "Great venue with modern facilities!",
-          "rate": 5
-        },
-        {
-          "userId": 2,
-          "review": "Spacious hall but parking was slightly crowded.",
-          "rate": 4
-        }
-      ]
-    },
-    {
-      "id": "2",
-      "name": "City Music Arena",
-      "address": "456 Harmony Street, Ganja, Azerbaijan",
-      "capacity": 1000,
-      "description": "A vibrant music arena hosting concerts, live performances, and festivals with excellent acoustics.",
-      "contactEmail": "contact@citymusicarena.az",
-      "contactPhone": "+994-50-234-5678",
-      "isParkingAvailable": true,
-      "imageURL": "https://example.com/images/city-music-arena.jpg",
-      "reviews": [
-        {
-          "userId": 3,
-          "review": "Amazing sound system and comfortable seating.",
-          "rate": 5
-        },
-        {
-          "userId": 4,
-          "review": "The VIP lounge was excellent, but entry queues were long.",
-          "rate": 4
-        }
-      ]
-    },
-    {
       "id": "3",
-      "name": "Startup Hub Auditorium",
-      "address": "789 Innovation Drive, Baku, Azerbaijan",
-      "capacity": 300,
-      "description": "A cozy auditorium perfect for workshops, seminars, and startup pitch events.",
-      "contactEmail": "auditorium@startuphub.az",
-      "contactPhone": "+994-50-345-6789",
-      "isParkingAvailable": false,
-      "imageURL": "https://example.com/images/startup-hub-auditorium.jpg",
-      "reviews": [
-        {
-          "userId": 5,
-          "review": "Perfect for small events with a collaborative atmosphere.",
-          "rate": 5
-        },
-        {
-          "userId": 6,
-          "review": "Limited parking, but the venue itself is excellent.",
-          "rate": 4
-        }
-      ]
-    },
-    {
-      "id": "4",
-      "name": "Modern Art Gallery",
-      "address": "321 Creative Lane, Baku, Azerbaijan",
-      "capacity": 200,
-      "description": "A sophisticated gallery showcasing contemporary art and providing an inspiring venue for exhibitions.",
-      "contactEmail": "info@modernart.az",
-      "contactPhone": "+994-50-456-7890",
-      "isParkingAvailable": false,
-      "imageURL": "https://example.com/images/modern-art-gallery.jpg",
-      "reviews": [
-        {
-          "userId": 7,
-          "review": "Beautiful venue with excellent art displays.",
-          "rate": 5
-        },
-        {
-          "userId": 8,
-          "review": "Great atmosphere, but parking is inconvenient.",
-          "rate": 4
-        }
-      ]
-    }
-  ],
-  "tickets": [
-    {
-      "id": "1",
-
-      "userId": 2,
-      "eventId": 1,
-      "quantity": 2,
-      "price": 100,
-      "purchaseDate": "2024-11-10T15:30:00Z",
-      "venueId": 1,
-      "ticketCode": "TK-001-AB12X"
-    },
-    {
-      "id": "2",
-      "userId": 3,
-      "eventId": 2,
-      "quantity": 1,
-      "price": 80,
-      "purchaseDate": "2024-11-12T10:00:00Z",
-      "venueId": 2,
-      "ticketCode": "TK-002-CD34Y"
-    },
-    {
-      "id": "3",
-      "userId": 4,
       "eventId": 3,
       "quantity": 3,
       "price": 120,
       "purchaseDate": "2024-11-14T12:00:00Z",
-      "venueId": 3,
       "ticketCode": "TK-003-EF56Z"
-    },
-    {
-      "id": "4",
-      "userId": 5,
-      "eventId": 4,
-      "quantity": 1,
-      "price": 90,
-      "purchaseDate": "2024-11-15T18:30:00Z",
-      "venueId": 1,
-      "ticketCode": "TK-004-GH78A"
     },
     {
       "id": "5",
@@ -241,7 +152,6 @@
       "quantity": 2,
       "price": 130,
       "purchaseDate": "2024-11-16T09:00:00Z",
-      "venueId": 4,
       "ticketCode": "TK-005-IJ90B"
     }
   ]
