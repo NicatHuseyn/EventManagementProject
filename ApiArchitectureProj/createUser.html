@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="./src/assets/css/createuser-css.css">
+  <title>Document</title>
+</head>
+<body>
+  <div id="signup-form">
+    <div class="form-inner">
+      <h1>Create User</h1>
+      <form id="signup">
+        <input type="text" id="fullname" placeholder="Enter your fullname" class="input" />
+        <input type="text" id="username" placeholder="Choose username" class="input" />
+        <input type="email" id="email" placeholder="Enter your email" class="input" />
+        <input type="number" id="balance" placeholder="Enter your balance" class="input" />
+        <input type="text" id="profileImageUrl" placeholder="Profile Image URL  " class="input" />
+        <select id="gender" class="input">
+          <option value="" selected disabled>Select your gender</option>
+          <option value="Male">Male</option>
+          <option value="Female">Female</option>
+        </select>
+        <input type="password" id="password" placeholder="Create password" class="input" />
+        <input type="password" id="confirm_password" placeholder="Confirm password" class="input"  />
+        <button type="submit" class="btn signup">create account</button>
+        <!-- <p>Clicking <strong>create account</strong> means that you are agree to our <a href="javascript:void(0)">terms of services</a>.</p> -->
+        <hr />
+  
+      </form>
+    </div>
+  </div>
+
+  <script type="module" src="./src/scripts/register.js"></script>
+</body>
+</html>
