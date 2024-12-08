@@ -36,7 +36,7 @@ function renderEvent(array) {
     deleteBtn.addEventListener("click", (btn)=>{
         btn.forEach((button)=>{
             const btn = button.getAtrribute("data-id");
-            const removeItem = btn.closest("")
+            const removeItem = btn.closest("").removeItem();
         })
     })
 }

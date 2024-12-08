@@ -13,19 +13,16 @@ body {
 header {
     background-color:#9b7ebd;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    /* position: fixed; */
     opacity: 0.9;
-    /* top: 0;
-    left: 0;
-    right: 0;
-    z-index: 1000; */
+   
 }
 
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 5%;
+    padding: 0 5%;
+    padding-top: 1rem;
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -36,9 +33,11 @@ nav {
     color:#eeeeee;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-
+ 
 .nav-links {
     display: flex;
+    align-items: center;
+    gap: 1.3rem;
     list-style: none;
 }
 
@@ -265,7 +264,7 @@ nav {
     height: 50px;
     margin-bottom: 15px;
     color: #40E0D0;
-}
+}   
 
 .stat-number {
     font-size: 3rem;
@@ -311,7 +310,68 @@ nav {
     color: #3b1e54;
 }
 
+.about_us{
+    display: flex;
+    align-items: start;
+    justify-content: space-around;
+    height: 65vh;
+    width: 100%;
+    padding: 2rem 10%;
 
+}
+.about_us .image{
+    height: 100%;
+    /* display: flex; */
+    /* flex: 1;     */
+    min-width: 50%;
+
+
+
+}
+.about_us .content{
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+    padding: 0 3rem;
+
+}
+.about_us .content h2{
+    /* color: #fff; */
+    font-size: 45px;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1.5px;
+    position: relative;
+
+}
+.about_us .content h2::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 3px;
+    transition: .6s;
+    background-color: black;
+
+}
+.about_us .content h2:hover::before{
+width: 100%;
+
+}
+.about_us .content p{
+    font-size: 20px;
+    letter-spacing: 1px;
+    color: #4A2E62;
+}
+
+.about_us .image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
 footer {
     background-color: #0A2647;
     color: white;
@@ -361,8 +421,12 @@ footer {
     text-decoration: none;
 }
 
-
-
+@media screen and (max-width:991px){
+    #statistics{
+        margin-top: 130%;
+    }
+}
+ 
 @media screen and (max-width: 768px) {
     .nav-links {
         display: none;
@@ -397,6 +461,19 @@ footer {
         grid-template-columns: 1fr;
         gap: 30px;
     }
+    .about_us {
+        flex-direction: column;
+        padding: 0.2rem 5%;
+    }
+    .about_us .image{
+        min-width: 95%;
+        min-height: 90%;
+    }
+    .about_us .content{
+        padding: 0 1rem;
+        margin-top: 2rem;
+    }
+    
 }
 
 @media screen and (max-width: 480px) {

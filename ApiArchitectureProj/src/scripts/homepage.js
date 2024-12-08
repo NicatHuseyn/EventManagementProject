@@ -22,46 +22,9 @@ document.addEventListener('DOMContentLoaded', function() {
         interval: 5000,
         wrap: true
     })
-
-    const slider = document.querySelector('.event-cards');
-    const prevButton = document.querySelector('.prev-arrow');
-    const nextButton = document.querySelector('.next-arrow');
-    const cards = document.querySelectorAll('.event-card');
-    
-    if (prevButton && nextButton && slider) {
-        let cardIndex = 0;
-        const cardWidth = cards[0].offsetWidth + 20; 
-
-        prevButton.addEventListener('click', () => {
-            if (cardIndex > 0) {
-                cardIndex--;
-                slider.style.transform = `translateX(-${cardIndex * cardWidth}px)`;
-            }
-        });
-
-        nextButton.addEventListener('click', () => {
-            if (cardIndex < cards.length - 1) {
-                cardIndex++;
-                slider.style.transform = `translateX(-${cardIndex * cardWidth}px)`;
-            }
-        });
-
-        let touchStartX = 0;
-        let touchEndX = 0;
-
-        slider.addEventListener('touchstart', (e) => {
-            touchStartX = e.changedTouches[0].screenX;
-        });
-
-        slider.addEventListener('touchend', (e) => {
-            touchEndX = e.changedTouches[0].screenX;
-            if (touchStartX - touchEndX > 50) {
-                nextButton.click(); 
-            } else if (touchEndX - touchStartX > 50) {
-                prevButton.click(); 
-            }
-        });
-    }
+ 
 });
 
 console.log("JavaScript code loaded successfully.");
+
+ 
