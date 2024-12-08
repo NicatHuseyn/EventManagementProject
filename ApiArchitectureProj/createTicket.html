@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/assets/css/create-ticket.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="signup-form">
+        <div class="form-inner">
+          <h1>Create Ticket</h1>
+          <form id="signup">
+
+            <select id="gender" class="input eventId">
+                <!-- <option value="" selected disabled>Select your gender</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option> -->
+              </select>
+            <select class="input userId">
+                <!-- <option value="" selected disabled>Select your gender</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option> -->
+              </select>
+
+            <input type="number" id="balance" placeholder="Enter your quantity" class="input quantity" />
+            <input type="number" id="balance" placeholder="Enter your price" class="input price" />
+
+            <button type="submit" class="btn signup">create account</button>
+            <!-- <p>Clicking <strong>create account</strong> means that you are agree to our <a href="javascript:void(0)">terms of services</a>.</p> -->
+            <hr />
+      
+          </form>
+        </div>
+      </div>
+
+      <script src="./src/scripts/createTicket.js" type="module"></script>
+</body>
+</html>

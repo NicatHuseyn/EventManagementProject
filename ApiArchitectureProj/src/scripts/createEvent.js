@@ -1,9 +1,6 @@
-import { getAllData,getDataById,deleteDataById,addNewData,editDataById,editDataByIdPatch } from "../../services/api/api.js";
-import { endpoints,BASE_URL } from "../../constants/url.js";
-import { all } from "axios";
-
-import { getAllData, addNewData, editDataByIdPatch, deleteDataById, getDataById } from "../../services/api/api.js";
-import { endpoints, BASE_URL } from "../../constants/url.js";
+// import { getAllData, addNewData, editDataByIdPatch, deleteDataById, getDataById } from "../services/http-services/httpClientService.js";
+import { endpoints } from "../constants/url.js";
+import { addNewData, getAllData, getDataById ,editDataByIdPatch,deleteDataById} from "../services/http-services/httpClientService.js";
 
 const tbody = document.querySelector("#eventTableBody");
 const formContainer = document.querySelector(".formContainer");
@@ -50,14 +47,16 @@ async function getData() {
     });
 
     // Edit button funksionalliqi
-    document.querySelectorAll(".edit").forEach((btn) => {
+    document.querySelectorAll(".edit").forEach(async (btn) => {
         btn.addEventListener("click", async () => {
             const id = btn.getAttribute("data-id");
             formContainer.classList.add("d-block");
             formTitle.textContent = "Edit Event";
 
             try {
-                const data = await getDataById(endpoints.events, id);
+                const data = await getDataById(endpoints.events,id);
+                console.log(data);
+                
                 const event = data.data;
 
                
@@ -107,7 +106,7 @@ async function getData() {
         btn.addEventListener("click", async () => {
             const id = btn.getAttribute("data-id");
             try {
-
+                console.log(btn.closest("tr"))
                 
                     Swal.fire({
                         title: "Are you sure?",
@@ -123,9 +122,6 @@ async function getData() {
                         
                         if (result.isConfirmed) {
                         const res = await deleteDataById(endpoints.events, id);
-                        console.log(btn.closest("tr"));
-                        
-                        btn.closest("tr").remove
                           Swal.fire({
                             title: "Deleted!",
                             text: "Your file has been deleted.",

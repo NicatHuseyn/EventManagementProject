@@ -3,16 +3,14 @@ import { endpoints } from "../constants/url";
 import { getAllData } from "../services/http-services/httpClientService";
 import { createUser } from "../services/user-services/createUserService";
 
-document.getElementById("signup-toggle").addEventListener("click", function() {
-    document.getElementById("login-toggle").style.backgroundColor = "#fff";
-    document.getElementById("login-toggle").style.color = "#222";
-    document.getElementById("signup-toggle").style.backgroundColor = "#57b846";
-    document.getElementById("signup-toggle").style.color = "#fff";
-    document.getElementById("login-form").style.display = "none";
-    document.getElementById("signup-form").style.display = "block";
-});
-
-import { createUser } from "../services/user-services/createUserService.js";
+// document.getElementById("signup-toggle").addEventListener("click", function() {
+//     document.getElementById("login-toggle").style.backgroundColor = "#fff";
+//     document.getElementById("login-toggle").style.color = "#222";
+//     document.getElementById("signup-toggle").style.backgroundColor = "#57b846";
+//     document.getElementById("signup-toggle").style.color = "#fff";
+//     document.getElementById("login-form").style.display = "none";
+//     document.getElementById("signup-form").style.display = "block";
+// });
 
 // document.getElementById("signup-toggle").addEventListener("click", function() {
 //     document.getElementById("login-toggle").style.backgroundColor = "#fff";
@@ -45,6 +43,11 @@ signupForm.addEventListener("submit",(e)=>{
     const passwordConfirmElem = document.getElementById("confirm_password").value;
 
     
+    if (!fullnameElem || !usernameELem || !emailElem || !balanceElem || !profileImageUrl || !genderElem || !passwordElem || !passwordConfirmElem) {
+        alert("Enter Your Data");
+        return;
+    }
+
 
     if (passwordElem !== passwordConfirmElem) {
         alert("your password is not same");
@@ -53,8 +56,6 @@ signupForm.addEventListener("submit",(e)=>{
     createUser(fullnameElem,usernameELem,emailElem,balanceElem,genderElem,profileImageUrl);
   
     signupForm.reset();
-
-    createUser(fullnameElem,usernameELem,emailElem,genderElem,passwordElem);
 
 
 });

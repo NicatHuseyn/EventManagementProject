@@ -1,56 +1,62 @@
 import axios from "axios"
-import { BASE_URL } from "../../constants/url";
+
+import { BASE_URL } from "../../constants/url.js";
 
 
-export const getAllData = async (endpoint)=>{
+//get all data
+async function getAllData(endpoint) {
     try {
-        const response = await axios.get(`${BASE_URL}/${endpoint}`);
-        return response;
+      const response = await axios(`${BASE_URL}/${endpoint}`);
+      return response;
     } catch (error) {
-        console.log(error.message);
-        
+      console.log(error.message);
     }
-}
-
-// Get Data By Id
-export const getDataById = async (endpoint, id) => {
+  }
+  
+  // get data by id
+  async function getDataById(endpoint, id) {
     try {
-        const response = await axios.get(`${BASE_URL}/${endpoint}/${id}`);
-        return response;
+      const response = await axios(`${BASE_URL}/${endpoint}/${id}`);
+      return response;
     } catch (error) {
-        console.log(error);
+      console.log(error.message);
     }
-}
-
-// Create Data
-export const createData = async (endpoint, payload) => {
+  }
+  // delete data by id
+  async function deleteDataById(endpoint, id) {
     try {
-        const response = await axios.post(`${BASE_URL}/${endpoint}`, payload, {
-            'Content-Type': 'application/json',
-        });
-        return response;
+      const response = await axios.delete(`${BASE_URL}/${endpoint}/${id}`);
+      return response;
     } catch (error) {
-        console.log(error);
+      console.log(error.message);
     }
-}
-
-
-// Update Data
-export const updateData = async (endpoint, payload) => {
+  }
+  // add new data
+  async function addNewData(endpoint, payload) {
     try {
-        const response = await axios.put(`${BASE_URL}/${endpoint}`, payload);
-        return response
+      const response = await axios.post(`${BASE_URL}/${endpoint}`, payload);
+      return response;
     } catch (error) {
-        console.log(error);
+      console.log(error.message);
     }
-}
-
-// Delete Data
-export async function deleteData(endpoints, id) {
+  }
+  // edit data by id
+  async function editDataById(endpoint, id, payload) {
     try {
-        const response = await axios.delete(`${BASE_URL}/${endpoints}/${id}`);
-        return response;
+      const response = await axios.put(`${BASE_URL}/${endpoint}/${id}`, payload);
+      return response;
     } catch (error) {
-        console.log(error);
+      console.log(error.message);
     }
-}
+  }
+  // edit data by id patch
+  async function editDataByIdPatch(endpoint, id, payload) {
+    try {
+      const response = await axios.patch(`${BASE_URL}/${endpoint}/${id}`, payload);
+      return response;
+    } catch (error) {
+      console.log(error.message);
+    }
+  }
+  
+  export { getAllData, getDataById, deleteDataById, addNewData, editDataById,editDataByIdPatch };

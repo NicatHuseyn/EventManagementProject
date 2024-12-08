@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/assets/css/detail.css">
+    <title>Event Detail</title>
+</head>
+<body>
+    <div class="event-card">
+        <div class="card-header">
+            <!-- Event Poster -->
+            <div class="card-poster">
+                <img class="card-img" src="https://media.4-paws.org/f/8/0/5/f8055215b5cdc5dee5494c255ca891d7b7d33cd1/Molly_006-2829x1886-2726x1886.jpg" alt="Event Poster">
+            </div>
+    
+            <!-- Balance and Total Spent -->
+            <div class="card-balance">
+                <li class="card-item" id="user-balance">Balance: 100 AZN</li>
+                <li class="card-item" id="total-spent">Total Spent: 0 AZN</li>
+            </div>
+        </div>
+
+        <div class="card-details">
+            <!-- Event Information -->
+            <div class="details-info">
+                <h2 class="details-title" id="card-title">Event: <span>JavaScript Seminar</span></h2>
+                <p class="details-date" id="card-date">Date: <span>15th December, 2024</span></p>
+                <p class="details-time" id="card-time">Time: <i>18:00</i></p>
+                <p class="details-location" id="card-location">Location: <span>Baku Conference Center</span></p>
+                <p class="details-price" id="event-price">Price: <span>30 AZN</span></p>
+                <p class="details-organizer" id="card-organizer">Organizer: <span>Education Center</span></p>
+            </div>
+
+            <!-- Ticket Selection -->
+            <div class="details__ticket-selection">
+                <label class="details-label" for="ticket-quantity">Ticket Quantity:</label>
+                <input class="details-input" type="number" id="ticket-quantity" value="1" min="1">
+                
+                <p class="details-tickets">Remaining Tickets: <span>50</span></p>
+        
+                <button class="details-buy-ticket" id="buy-ticket">Buy Ticket</button>
+                <a role="button" href="./index.html" class="details-go-back" id="go-back">Go Back</a>
+            </div>
+
+            <!-- Sold Out Message -->
+            <p class="card-sold-out-message" id="sold-out-message" >Sold Out</p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,6 +1,6 @@
 import { nanoid } from "nanoid";
 
-const ticketCode = crypto.randomUUID();
+const ticketCode = crypto.randomUUID();     
 
 export class Ticket {
     constructor(userId,eventId,quantity,price) {
